@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradewinds Elementary - October 2025</title>
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+        
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #2c5aa0, #5d8fce);
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+        }
+        
+        .school-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .month-year {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .calendar {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .calendar th {
+            background: #2c5aa0;
+            color: white;
+            padding: 8px 3px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .calendar td {
+            border: 1px solid #ddd;
+            padding: 3px 2px;
+            vertical-align: top;
+            height: 85px;
+            width: 14.28%;
+            position: relative;
+        }
+        
+        .date-number {
+            font-weight: bold;
+            font-size: 12px;
+            color: #2c5aa0;
+            margin-bottom: 2px;
+        }
+        
+        .event {
+            font-size: 8px;
+            background: #e3f2fd;
+            border-left: 2px solid #2196f3;
+            padding: 1px 2px;
+            margin: 1px 0;
+            border-radius: 2px;
+            line-height: 1.1;
+        }
+        
+        .special-event {
+            background: #fff3e0;
+            border-left-color: #ff9800;
+        }
+        
+        .no-school {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        
+        .weekend {
+            background: #f5f5f5;
+        }
+        
+        .other-month {
+            color: #ccc;
+            background: #fafafa;
+        }
+        
+        .legend {
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-size: 10px;
+        }
+        
+        .legend-color {
+            width: 15px;
+            height: 12px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="school-name">Tradewinds Elementary</div>
+        <div style="font-size: 12px;">Dr. Elie, Principal | Ms. Brantley, Assistant Principal</div>
+        <div class="month-year">October 2025</div>
+        <div style="font-size: 11px; margin-top: 5px;">Hispanic Heritage Month (ends Oct 15) | Red Ribbon Week (Oct 23-31)</div>
+    </div>
+
+    <table class="calendar">
+        <thead>
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="other-month weekend">
+                    <div class="date-number">28</div>
+                </td>
+                <td class="other-month">
+                    <div class="date-number">29</div>
+                </td>
+                <td class="other-month">
+                    <div class="date-number">30</div>
+                </td>
+                <td>
+                    <div class="date-number">1</div>
+                    <div class="event">SAC/SAF (2:20pm)</div>
+                </td>
+                <td>
+                    <div class="date-number">2</div>
+                </td>
+                <td>
+                    <div class="date-number">3</div>
+                    <div class="event">Birthday Table - Oct</div>
+                </td>
+                <td class="weekend">
+                    <div class="date-number">4</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="weekend">
+                    <div class="date-number">5</div>
+                    <div class="event special-event">Fire Prevention Wk</div>
+                </td>
+                <td>
+                    <div class="date-number">6</div>
+                    <div class="event special-event">FTE #1 Week</div>
+                    <div class="event">PTA Meeting (6pm)</div>
+                </td>
+                <td>
+                    <div class="date-number">7</div>
+                    <div class="event special-event">FTE #1 Week</div>
+                </td>
+                <td>
+                    <div class="date-number">8</div>
+                    <div class="event special-event">FTE #1 Week</div>
+                    <div class="event">Picture Retakes</div>
+                    <div class="event special-event">Eagle's Landing PK-2</div>
+                </td>
+                <td>
+                    <div class="date-number">9</div>
+                    <div class="event special-event">FTE #1 Week</div>
+                    <div class="event special-event">Eagle's Landing 3-5</div>
+                </td>
+                <td>
+                    <div class="date-number">10</div>
+                    <div class="event special-event">FTE #1 Week</div>
+                    <div class="event no-school">Early Release (12pm)</div>
+                </td>
+                <td class="weekend">
+                    <div class="date-number">11</div>
+                    <div class="event special-event">Fire Prevention Wk</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="weekend">
+                    <div class="date-number">12</div>
+                </td>
+                <td>
+                    <div class="date-number">13</div>
+                    <div class="event no-school">Employee Planning</div>
+                </td>
+                <td>
+                    <div class="date-number">14</div>
+                    <div class="event special-event">Quarter 2 Begins</div>
+                    <div class="event">Harvest Drive Begins</div>
+                </td>
+                <td>
+                    <div class="date-number">15</div>
+                    <div class="event special-event">Hispanic Heritage Ends</div>
+                </td>
+                <td>
+                    <div class="date-number">16</div>
+                </td>
+                <td>
+                    <div class="date-number">17</div>
+                </td>
+                <td class="weekend">
+                    <div class="date-number">18</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="weekend">
+                    <div class="date-number">19</div>
+                </td>
+                <td>
+                    <div class="date-number">20</div>
+                    <div class="event no-school">No School</div>
+                    <div class="event">Bus Appreciation Wk</div>
+                </td>
+                <td>
+                    <div class="date-number">21</div>
+                    <div class="event">Bus Appreciation Wk</div>
+                </td>
+                <td>
+                    <div class="date-number">22</div>
+                    <div class="event">Bus Appreciation Wk</div>
+                </td>
+                <td>
+                    <div class="date-number">23</div>
+                    <div class="event">Bus Appreciation Wk</div>
+                    <div class="event special-event">Red Ribbon Wk Begins</div>
+                    <div class="event">SAC/SAF (2:20pm)</div>
+                </td>
+                <td>
+                    <div class="date-number">24</div>
+                    <div class="event">Bus Appreciation Wk</div>
+                    <div class="event special-event">Red Ribbon Week</div>
+                    <div class="event">OT Day - Ms. Y</div>
+                </td>
+                <td class="weekend">
+                    <div class="date-number">25</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="weekend">
+                    <div class="date-number">26</div>
+                </td>
+                <td>
+                    <div class="date-number">27</div>
+                    <div class="event special-event">Red Ribbon Week</div>
+                    <div class="event">Scholastic Book Fair</div>
+                </td>
+                <td>
+                    <div class="date-number">28</div>
+                    <div class="event special-event">Red Ribbon Week</div>
+                    <div class="event">Scholastic Book Fair</div>
+                </td>
+                <td>
+                    <div class="date-number">29</div>
+                    <div class="event special-event">Red Ribbon Week</div>
+                    <div class="event">Scholastic Book Fair</div>
+                </td>
+                <td>
+                    <div class="date-number">30</div>
+                    <div class="event special-event">Red Ribbon Week</div>
+                    <div class="event">Scholastic Book Fair</div>
+                </td>
+                <td>
+                    <div class="date-number">31</div>
+                    <div class="event special-event">Red Ribbon Week</div>
+                    <div class="event">Scholastic Book Fair</div>
+                    <div class="event special-event">Storybook Character Day</div>
+                </td>
+                <td class="other-month weekend">
+                    <div class="date-number">1</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background: #e3f2fd; border-left: 2px solid #2196f3;"></div>
+            <span>Regular Events</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #fff3e0; border-left: 2px solid #ff9800;"></div>
+            <span>Special Events</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ffebee; border-left: 2px solid #f44336;"></div>
+            <span>No School</span>
+        </div>
+    </div>
+</body>
+</html>
